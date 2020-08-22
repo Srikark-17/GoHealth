@@ -48,20 +48,21 @@
     document.getElementById("pac-input").innerHTML="hospitals near me";
   }
 </script>
-  <nav>
-    <input type="checkbox" id="check">
-    <label for="check" class="checkbtn">
-      <i  class="fas fa-bars"></i>
-    </label>
-    <label class="logo">GoHealth</label>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="login.html">Login</a></li>
-      <li><a href="signup.html">Registration</a></li>
-      <li><a class="active" href="emergency.html">Emergency</a></li>
-      <li><a href="contact.html">Contact Us</a></li>
-    </ul>
-  </nav>
+<nav>
+  <input type="checkbox" id="check">
+  <label for="check" class="checkbtn">
+  <i  class="fas fa-bars"></i>
+  </label>
+  <label class="logo">GoHealth</label>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="login.html">Login</a></li>
+    <li><a href="signup.html">Registration</a></li>
+    <li><a class="active" href="emergency.html">Emergency</a></li>
+    <li><a href="track.html">Track</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+  </ul>
+</nav>
 
   <section id="intro" style="z-index: -1">
 
@@ -73,7 +74,7 @@
     <br>
     <br>
     <br>
-    <p class="emergency">
+    <p class="emergency" style="color: aliceblue;">
       Use the search box to find a nearby hospital.
     </p>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default">
@@ -251,7 +252,7 @@
       id="pac-input"
       class="controls"
       type="text"
-      placeholder="Search Box"
+      placeholder="Hospitals Near Me"
     />
     <div id="map"></div>
     <script src="three.r95.min.js"></script>

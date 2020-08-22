@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<title>
+  Track - GoHealth
+</title>
+  <link rel="icon" href="favi.ico" type="image/x-icon"/>
+  <link rel="icon" href="favi.ico" type="image/x-icon"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i"
+        rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
+    <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
+    <link rel="stylesheet" href="assets/css/Covid-Map.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
+    <link rel="stylesheet" href="assets/css/Map-Clean.css">
+    <link rel="stylesheet" href="assets/css/smoothproducts.css">
+</head>
+
+<body>
+  <div class="alan-btn" style="z-index: 0;"></div>
+  <script type="text/javascript"
+ src="https://studio.alan.app/web/lib/alan_lib.js"></script>
+<script>
+  var alanBtnInstance = alanBtn({
+    key: "66157f1f82040fb72ff9f3ee75c193942e956eca572e1d8b807a3e2338fdd0dc/stage",
+    onCommand: function (commandData) {
+      if (commandData.command === "em") {
+        //call client code that will react on the received command
+        def();
+
+      }
+    },
+    rootEl: document.getElementById("alan-btn"),
+  });
+
+
+  function def(){
+    document.getElementById("pac-input").innerHTML="hospitals near me";
+  }
+</script>
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i  class="fas fa-bars"></i>
+    </label>
+    <label class="logo">GoHealth</label>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="signup.html">Registration</a></li>
+      <li><a class="active" href="emergency.html">Emergency</a></li>
+      <li><a href="track.html">Track</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <section id="intro" style="z-index: -1">
+
+</body>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p class="emergency" style="color: aliceblue;">
+      Use the map to figure out where your ambulance is.
+    </p>
+    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=11CVWODYPYxhP_ZhPwFig1WadnB5y-UBl" width="1925" height="750" style="z-index: 1;"></iframe>
+    <script src="three.r95.min.js"></script>
+    <script src="vanta.waves.min.js"></script>
+    <script src="app.js"></script>
+    <footer class="page-footer dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h5>Get started</h5>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="signup.html">Sign up</a></li>
+                        <li><a href="logout.html">Logout</a></li>
+                        <li><a href="patient-info.html">Patient</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5>About us</h5>
+                    <ul>
+                        <li><a href="#">Company Information</a></li>
+                        <li><a href="#">Reviews</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5>Support</h5>
+                    <ul>
+                        <li><a href="contact.html">Contact Support</a></li>
+                        <li><a href="Emergency.html">Contact a Doctor</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>© 2020 GoHealth</p>
+        </div>
+    </footer>
+  </body>
+</html>

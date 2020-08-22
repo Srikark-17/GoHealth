@@ -1,0 +1,539 @@
+*{
+	padding:0;
+	margin:0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box; 
+}
+
+body{
+	margin: 0;
+	padding:0;
+}
+
+nav{
+	box-sizing: border-box;
+    background: rgba(70, 65, 65, 0.2);
+    box-shadow: 0 5px 15px rgba(0,0,0,.2);
+    transition: .5s;
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+label.logo {
+	padding:10px 70px;
+    line-height: 80px;
+    font-size: 60px;
+    color: aliceblue;
+}
+
+nav ul{
+	float: right;
+	margin-right: 20px;
+	font-family: 'verdana';
+}
+
+nav ul li{
+	display: inline-block;
+	line-height: 80px;
+	margin: 0 5px; 
+}
+
+nav ul li a{
+	color: white;
+	font-size: 17px;
+	text-transform: uppercase;
+	padding: 7px 13px;
+	border-radius: 3px;
+
+}
+
+a.active,a:hover{
+	background: #aaa;
+	transition: .5s;
+}
+
+.checkbtn{
+	font-size: 30px;
+	color: black;
+	float: right;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+}
+
+
+.a{
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width:100%;
+}
+
+.b{
+    width: 25%;
+    border: 1px solid #9a9a9a;
+    text-align: center;
+    box-shadow: 0px 8px 8px -8px #000;
+    border-radius: 15px;
+    font-family: 'Libre Franklin', sans-serif;
+    padding-bottom: 4%;
+    height: 75%;
+}
+
+.bb{
+    width: 25%;
+    border: 1px solid #9a9a9a;
+    text-align: center;
+    box-shadow: 0px 8px 8px -8px #000;
+    border-radius: 15px;
+    font-family: 'Libre Franklin', sans-serif;
+    padding-bottom: 4%;
+    height:75%;
+
+}
+#check{
+	display: none;
+}
+
+@media (max-width: 952px){
+	label.logo{
+		padding-left: 50px;
+		height: 50px;
+        width: 150px;
+        font-size: 40px;
+        color: aliceblue;
+	}
+
+	nav ul li a{
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 858px){
+
+	label.logo{
+		padding-left: 10px;
+        margin-top: -10px;
+        font-size: 40px;
+        color: azure;
+
+	}
+	.checkbtn{
+		display: block;
+	}
+
+
+	ul{
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: black;
+		top: 80px;
+		left: -100%;
+		text-align: center;
+		transition: all .5s;
+	}
+
+	nav ul li{
+		display: block;
+		margin: 50px 0;
+		line-height: 30px;
+	}
+	nav ul li a{
+		font-size: 20px;
+	}
+
+	a:hover,a.active{
+		background: none;
+		color: #aaa;
+	}
+
+	#check:checked ~ul{
+		left: 0;
+	}
+}
+
+#intro{
+	width: auto; 
+	height: 1300px; 
+}
+
+.sec2{
+	
+	background-color: #444;
+	padding: 0;
+}
+
+.box{
+	background: rgba(0,0,0,.4);
+    position: absolute;
+    border-radius: 10px;
+    box-shadow: 0 15px 15px rgba(0,0,0,.5);
+    top: 10%;
+    left: 15%;
+    width: 75%;
+    height: auto;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.lh{
+    position: absolute;
+    top: 28%;
+    color: #aaa;
+    left: 30%;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    align-content: center;
+    font-size: 55px;   
+}
+
+.lh2{
+    position: absolute;
+    top: 47%;
+    color: #aaa;
+    font-family: 'Raleway',sans-serif;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    left: 32%;
+    font-size: 35px;
+}
+
+.p1{
+    position: absolute;
+    color: #aaa;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    align-content: center;
+    top: 29vh;
+    left: 22%;
+    font-size: 30px;
+}
+
+@media (max-width: 1024px){      /*-----------Ipad Pro*/
+	.lh{
+    position: absolute;
+    top: 28%;
+    color: #aaa;
+    left: 20%;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    align-content: center;
+    font-size: 40px;   
+}
+
+
+.p1{
+    position: absolute;
+    color: #aaa;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    align-content: center;
+    top: 20vh;
+    left: 22%;
+    font-size: 25px;
+}
+
+}
+
+@media (max-width: 768px){          /*--------IPAD*/
+	.lh{
+    position: absolute;
+    top: 28%;
+    color: #aaa;
+    left: 25%;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    align-content: center;
+    font-size: 40px;   
+}
+
+
+.p1{
+    position: absolute;
+    color: #aaa;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    align-content: center;
+    top: 21vh;
+    left: 18%;
+    padding-bottom: 30px;
+    font-size: 25px;
+}
+
+
+
+.lh2{
+    position: absolute;
+    top: 45%;
+    color: #aaa;
+    font-family: 'Raleway',sans-serif;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    left: 25%;
+    font-size: 35px;
+}
+
+
+.a{
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width:100%;
+}
+
+.b{
+    width: 55%;
+    border: 1px solid #9a9a9a;
+    text-align: center;
+    box-shadow: 0px 8px 8px -8px #000;
+    border-radius: 15px;
+    font-family: 'Libre Franklin', sans-serif;
+    padding-bottom: 4%;
+    height: 40%;
+}
+
+.bb{
+    width: 55%;
+    border: 1px solid #9a9a9a;
+    text-align: center;
+    box-shadow: 0px 8px 8px -8px #000;
+    border-radius: 15px;
+    font-family: 'Libre Franklin', sans-serif;
+    padding-bottom: 4%;
+    margin-top: 3%;
+    height:40%;
+
+}
+
+
+
+}
+
+@media (max-width: 320px){        /*----------IPHONE SE*/
+
+.box{
+	background: rgba(0,0,0,.4);
+    position: absolute;
+    border-radius: 10px;
+    box-shadow: 0 15px 15px rgba(0,0,0,.5);
+    top: 20%;
+    left: 10%;
+    width: 80%;
+    height: auto;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+}
+
+#intro{
+	width: auto; 
+	height: 950px; 
+}
+.lh{
+    position: absolute;
+    top: 28%;
+    color: #aaa;
+    left: 15%;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    align-content: center;
+    font-size: 20px;   
+}
+
+
+.p1{
+    position: absolute;
+    color: #aaa;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    align-content: center;
+    top: 35vh;
+    left: 18%;
+    font-size: 10px;
+}
+
+
+
+.lh2{
+    position: absolute;
+    top: 45%;
+    color: #aaa;
+    font-family: 'Raleway',sans-serif;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    left: 35%;
+    font-size: 20px;
+}
+
+.a{
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width:100%;
+}
+
+.b{
+    width: 70%;
+    border: 1px solid #9a9a9a;
+    text-align: center;
+    box-shadow: 0px 8px 8px -8px #000;
+    border-radius: 15px;
+    font-family: 'Libre Franklin', sans-serif;
+    padding-bottom: 4%;
+    height: 50%;
+}
+
+.bb{
+    width: 70%;
+    border: 1px solid #9a9a9a;
+    text-align: center;
+    box-shadow: 0px 8px 8px -8px #000;
+    border-radius: 15px;
+    font-family: 'Libre Franklin', sans-serif;
+    padding-bottom: 4%;
+    height:50%;
+
+}
+
+
+}
+
+@media (max-width: 376px){         /*--------IPHONE X*/
+	 
+.box{
+	background: rgba(0,0,0,.4);
+    position: absolute;
+    border-radius: 10px;
+    box-shadow: 0 15px 15px rgba(0,0,0,.5);
+    top: 15%;
+    left: 10%;
+    width: 80%;
+    height: auto;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+}
+
+#intro{
+	width: auto; 
+	height: 950px; 
+}
+.lh{
+    position: absolute;
+    top: 28%;
+    color: #aaa;
+    left: 10%;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    align-content: center;
+    font-size: 20px;   
+}
+
+
+.p1{
+    position: absolute;
+    color: #aaa;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    align-content: center;
+    top: 250px;
+    left: 18%;
+    font-size: 10px;
+}
+
+
+
+.lh2{
+    position: absolute;
+    top: 40%;
+    color: #aaa;
+    font-family: 'Raleway',sans-serif;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    left: 35%;
+    font-size: 20px;
+}
+
+
+}
+
+
+@media (max-width: 414px){       /*-----------Normal Phones*/
+	
+.box{
+	background: rgba(0,0,0,.4);
+    position: absolute;
+    border-radius: 10px;
+    box-shadow: 0 15px 15px rgba(0,0,0,.5);
+    top: 17%;
+    left: 10%;
+    width: 80%;
+    height: auto;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+}
+
+#intro{
+	width: auto; 
+	height: 950px; 
+}
+.lh{
+    position: absolute;
+    top: 28%;
+    color: #aaa;
+    left: 25%;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    align-content: center;
+    font-size: 130%;   
+}
+
+
+.p1{
+    position: absolute;
+    color: #aaa;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    align-content: center;
+    top: 250px;
+    left: 18%;
+    font-size: 15px;
+}
+
+
+
+.lh2{
+    position: absolute;
+    top: 40%;
+    color: #aaa;
+    font-family: 'Raleway',sans-serif;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    left: 20%;
+    font-size: 20px;
+}
+
+
+}

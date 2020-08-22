@@ -4,54 +4,54 @@
 <title>
   Emergency - GoHealth
 </title>
-  <link rel="icon" href="favi.ico" type="image/x-icon"/>
-  <link rel="icon" href="favi.ico" type="image/x-icon"/>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<link rel="icon" href="favi.ico" type="image/x-icon"/>
+<link rel="icon" href="favi.ico" type="image/x-icon"/>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i"
-        rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i"
+      rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i"
-        rel="stylesheet">
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="manifest" href="manifest.json">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
-    <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
-    <link rel="stylesheet" href="assets/css/Covid-Map.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
-    <link rel="stylesheet" href="assets/css/Map-Clean.css">
-    <link rel="stylesheet" href="assets/css/smoothproducts.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i"
+      rel="stylesheet">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
+  <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
+  <link rel="stylesheet" href="assets/css/Covid-Map.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
+  <link rel="stylesheet" href="assets/css/Map-Clean.css">
+  <link rel="stylesheet" href="assets/css/smoothproducts.css">
 </head>
 
 <body>
-  <div class="alan-btn" style="z-index: 1;"></div>
-  <script type="text/javascript"
- src="https://studio.alan.app/web/lib/alan_lib.js"></script>
+<div class="alan-btn" style="z-index: 0;"></div>
+<script type="text/javascript"
+src="https://studio.alan.app/web/lib/alan_lib.js"></script>
 <script>
-  var alanBtnInstance = alanBtn({
-    key: "66157f1f82040fb72ff9f3ee75c193942e956eca572e1d8b807a3e2338fdd0dc/stage",
-    onCommand: function (commandData) {
-      if (commandData.command === "em") {
-        //call client code that will react on the received command
-        def();
+var alanBtnInstance = alanBtn({
+  key: "66157f1f82040fb72ff9f3ee75c193942e956eca572e1d8b807a3e2338fdd0dc/stage",
+  onCommand: function (commandData) {
+    if (commandData.command === "em") {
+      //call client code that will react on the received command
+      def();
 
-      }
-    },
-    rootEl: document.getElementById("alan-btn"),
-  });
+    }
+  },
+  rootEl: document.getElementById("alan-btn"),
+});
 
 
-  function def(){
-    document.getElementById("pac-input").innerHTML="hospitals near me";
-  }
+function def(){
+  document.getElementById("pac-input").innerHTML="hospitals near me";
+}
 </script>
-<nav>
+<nav style="background-image: url(bg.png);">
   <input type="checkbox" id="check">
   <label for="check" class="checkbtn">
-  <i  class="fas fa-bars"></i>
+    <i  class="fas fa-bars"></i>
   </label>
   <label class="logo">GoHealth</label>
   <ul>
@@ -64,19 +64,23 @@
   </ul>
 </nav>
 
-  <section id="intro" style="z-index: -1">
 
 </body>
-
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <p class="emergency" style="color: aliceblue;">
-      Use the search box to find a nearby hospital.
-    </p>
+  <div style="background-image: url(bg1.png);">
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+  </div>
+  
+  <div style="background-image:url(bg2.png); color: aliceblue;">
+      Use the search box to find hospitals near you.
+      <br>
+      <br>
+      <br>
+  </div>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default">
     </script>
     <script

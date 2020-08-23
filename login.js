@@ -31,7 +31,7 @@ function log() {
       // User is signed in.
       alert("Try again");
       //FirebaseAuth.getInstance().signOut;
-
+      localStorage.setItem("drMedName", "doctor");
       window.location.href = "patient-info.html";
       // ...
     } else {

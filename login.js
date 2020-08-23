@@ -30,21 +30,20 @@ function log() {
     if (user) {
       // User is signed in.
       alert("Try again");
-      FirebaseAuth.getInstance().signOut;
+      //FirebaseAuth.getInstance().signOut;
 
-      //window.location.href = "patient-info.html";
+      window.location.href = "patient-info.html";
       // ...
     } else {
       // User is signed out.
       // ...
       var email = document.getElementById("email").value;
       var password = document.getElementById("password").value;
-      var doc = email.contains("doctor");
-      if (doc) {
+      if (email.includes("doctor")) {
         localStorage.setItem("drMedName", "doctor");
-      } else {
-        localStorage.setItem("drMedName", "");
-      }
+      } //else {
+      //  localStorage.setItem("drMedName", "");
+      //}
 
       console.log(email);
       console.log(password);

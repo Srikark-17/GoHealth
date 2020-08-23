@@ -39,9 +39,9 @@ function log() {
       // ...
       var email = document.getElementById("email").value;
       var password = document.getElementById("password").value;
-      if (email.includes("doctor")) {
-        localStorage.setItem("drMedName", "doctor");
-      } //else {
+      //if (email.includes("doctor")) {
+      localStorage.setItem("drMedName", "doctor");
+      //} //else {
       //  localStorage.setItem("drMedName", "");
       //}
 

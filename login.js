@@ -29,7 +29,7 @@ function log() {
   firebase.auth().onAuthStateChanged(function (user) {
     if (user) {
       // User is signed in.
-      alert("Try again");
+      //alert("Try again");
       //FirebaseAuth.getInstance().signOut;
       localStorage.setItem("drMedName", "doctor");
       window.location.href = "patient-info.html";

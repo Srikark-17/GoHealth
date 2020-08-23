@@ -26,34 +26,19 @@ link.addEventListener("click", log);
 // }
 
 function log() {
-  firebase.auth().onAuthStateChanged(function (user) {
-    if (user) {
-      // User is signed in.
-      alert("You are already logged in!");
+  firebase
+    .auth()
+    .signInWithEmailAndPassword(email, password)
+    .catch(function (error) {
+      // Handle Errors here.
+      var errorCode = error.code;
+      var errorMessage = error.message;
+      console.log("Success");
+
+      if (errorCode != null || errorMessage != null) {
+        alert("Error " + errorCode + " Error Message " + errorMessage);
+      }
       window.location.href = "patient-info.html";
       // ...
-    } else {
-      // User is signed out.
-      // ...
-      var email = document.getElementById("email").value;
-      var password = document.getElementById("password").value;
-      console.log(email);
-      console.log(password);
-      firebase
-        .auth()
-        .createUserWithEmailAndPassword(email, password)
-        .catch(function (error) {
-          // Handle Errors here.
-          var errorCode = error.code;
-          var errorMessage = error.message;
-          console.log("Success");
-
-          if (errorCode != null || errorMessage != null) {
-            alert("Error " + errorCode + " Error Message " + errorMessage);
-          }
-          window.location.href = "patient-info.html";
-          // ...
-        });
-    }
-  });
+    });
 }

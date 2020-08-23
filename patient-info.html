@@ -124,7 +124,9 @@
                   var loadFile = function (event) {
                     var image = document.getElementById("output");
                     image.src = URL.createObjectURL(event.target.files[0]);
-                    if (image.src.split(".").pop == "jpg") {
+                    var fileName = document.querySelector("#chooseFile").value;
+                    var extension = fileName.split(".").pop();
+                    if (extension == "png") {
                       document.getElementById("goodbad").innerHTML = "good";
                     } else {
                       document.getElementById("goodbad").innerHTML = "bad";

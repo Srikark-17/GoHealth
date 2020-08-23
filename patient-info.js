@@ -1371,8 +1371,12 @@ function infoReturn() {
         newArray[i].A1C +
         " mg/dL" +
         "<br />" +
-        "Skin Conductance: ";
-      newArray[i].sc + "uS" + "<br />" + "Glucose Level: " + newArray[i].gl;
+        "Skin Conductance: " +
+        newArray[i].sc +
+        "uS" +
+        "<br />" +
+        "Glucose Level: " +
+        newArray[i].gl;
       mainContainer.appendChild(div);
     }
   }

@@ -1323,6 +1323,10 @@ function infoReturn() {
   // will coerce the string to a number before comparing.)
   var name = window.localStorage.getItem("drMedName");
   if (name.includes("Doctor") || name.includes("doctor")) {
+    var image1 = document.getElementById("graph1");
+    image1.src = URL.createObjectURL("graph1.jpeg");
+    var image2 = document.getElementById("graph1");
+    image2.src = URL.createObjectURL("graph2.jpeg");
     let dataStr = JSON.stringify(obj);
     let dataUri =
       "data:application/json;charset=utf-8," + encodeURIComponent(dataStr);

@@ -61,7 +61,7 @@ function log() {
       console.log(password);
       firebase
         .auth()
-        .createUserWithEmailAndPassword(email, password)
+        .signInWithEmailAndPassword(email, password)
         .catch(function (error) {
           // Handle Errors here.
           var errorCode = error.code;

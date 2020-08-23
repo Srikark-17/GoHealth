@@ -27,7 +27,7 @@ GitHub
  Node Js
  * Firebase Modules
 
- Alan - Alan is a Smart Assistant that we have built for users to ask simple questions. *You can ask it I have a Cough* and it will respond
+ Alan - A smart assistant that we have built for users to ask simple medical questions. *You can ask it I have a Cough* and it will respond
 
 ## Challenges we ran into
 There were many challenges we ran into, but that's what programming's all about. One of the difficult challenges we ran into was making sure the UI worked. Another challenge was figuring out how to to extract information from the JSON file to the website.

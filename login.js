@@ -39,6 +39,13 @@ function log() {
       // ...
       var email = document.getElementById("email").value;
       var password = document.getElementById("password").value;
+      var doc = email.contains("doctor");
+      if (doc) {
+        localStorage.setItem("drMedName", "doctor");
+      } else {
+        localStorage.setItem("drMedName", "");
+      }
+
       console.log(email);
       console.log(password);
       firebase
@@ -53,9 +60,10 @@ function log() {
           if (errorCode != null || errorMessage != null) {
             alert("Error " + errorCode + " Error Message " + errorMessage);
           }
-          window.location.href = "patient-info.html";
+
           // ...
         });
+      window.location.href = "patient-info.html";
     }
   });
 }

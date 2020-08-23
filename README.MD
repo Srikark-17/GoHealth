@@ -1,3 +1,5 @@
+### GoHealth
+
 ## Inspiration
 A potential challenge during the pandemic outbreak like COVID19 is overwhelming hospitals. Due to the increase in the number of COVID patients, doctors are giving less attention to a non-COVID patient. Right now, hospitals don't have the capacity for the large number of incoming patients. There is a need for a technology platform which is capable of remote-monitoring and allowing for the engagement of patients in their homes. The capabilities also facilitate communication between quarantined people and the healthcare service and maintain visibility of those recently discharged. This problem is what inspired us to make this user-friendly interface.
 
@@ -23,6 +25,7 @@ Bootstrap HTML/CSS/JS
 GitHub
   * File Management
   * Hosting
+
  Node Js
  * Firebase Modules
 
@@ -45,4 +48,4 @@ We are proud of so many things. We made use of this project to the best of our a
 * Implement more Google Cloud Features including Tensorflow AI for medical classification and image classificatin to find various conditions
 * Implement a TeleHealth API platform for virtual doctor visits
 * Implement Echo AR for human body modeling
-* Implement a Covid-19 screener questionaire for the workplace and schools
+* Implement a COVID-19 screener questionnaire for the workplace and schools

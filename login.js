@@ -30,7 +30,7 @@ function log() {
     if (user) {
       // User is signed in.
       alert("You are already logged in!");
-      window.location.href = "index.html";
+      window.location.href = "patient-info.html";
       // ...
     } else {
       // User is signed out.

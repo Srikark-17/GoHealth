@@ -1040,7 +1040,7 @@ function infoReturn(){
 
         for (var i = 0; i < newArray.length; i++){
             var div = document.createElement("div")
-            div.innerHTML = "Name: " + newArray[i].first_name + "<br />"+"Pulse Rate: " + newArray[i].bp + "<br />"+"Temp: " + newArray[i].temp + "C" + "<br />"+" Blood Pressure: " + newArray[i].heart_rate + "<br />"+ " Heart Rate: " + newArray[i].heart_rate + " BPM" + "<br />"+" A1C Level: " + newArray[i].ac + " mg/dL"
+            div.innerHTML = "Name: " + newArray[i].first_name + "<br />"+"Pulse Rate: " + newArray[i].heart_rate + "<br />"+"Temp: " + newArray[i].temp + "C" + "<br />"+" Blood Pressure: " + newArray[i].bp + "<br />"+ " Heart Rate: " + newArray[i].heart_rate + " BPM" + "<br />"+" A1C Level: " + newArray[i].ac + " mg/dL"+ "<br />"+"Skin Conductance: 0.4uS"+"<br />"+"Glucose Level: "+newArray[i].ac
             mainContainer.appendChild(div)
         }
     }

@@ -1,80 +1,106 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-<head>
+  <head>
     <title>Registration - GoHealth</title>
-    <link rel="icon" href="favi.ico" type="image/x-icon"/>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="signup.css">
+    <link rel="icon" href="favi.ico" type="image/x-icon" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="signup.css" />
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="manifest" href="manifest.json">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
-    <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
-    <link rel="stylesheet" href="assets/css/Covid-Map.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
-    <link rel="stylesheet" href="assets/css/Map-Clean.css">
-    <link rel="stylesheet" href="assets/css/smoothproducts.css">
-
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="manifest" href="manifest.json" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i"
+    />
+    <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css" />
+    <link rel="stylesheet" href="assets/css/Covid-Map.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/Map-Clean.css" />
+    <link rel="stylesheet" href="assets/css/smoothproducts.css" />
+  </head>
+  <body>
     <nav style="background-image: url(bg.png);">
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-          <i  class="fas fa-bars"></i>
-        </label>
-        <label class="logo">GoHealth</label>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="login.html">Login</a></li>
-          <li><a class="active" href="signup.html">Registration</a></li>
-          <li><a href="Emergency.html">Emergency</a></li>
-          <li><a href="track.html">Track</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-      </nav>
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">GoHealth</label>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a class="active" href="signup.html">Registration</a></li>
+        <li><a href="Emergency.html">Emergency</a></li>
+        <li><a href="track.html">Track</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
 
     <div class="alan-btn"></div>
-	<section id="intro">
-
-		<div class="box">
-
-            <main class="page registration-page">
-                <section class="clean-block clean-form dark">
-                    <div class="container">
-                        <div class="block-heading">
-                            <h2 class="text-info">Registration</h2>
-                            <p>Please enter the below information to register.</p>
-                        </div>
-                        <form>
-                            <div class="form-group"><label for="name">Name</label><input class="form-control item" type="text" id="name"></div>
-                            <div class="form-group"><label for="password">Password</label><input class="form-control item" type="password" id="password"></div>
-                            <div class="form-group"><label for="email">Email</label><input class="form-control item" type="email" id="email"></div>
-                            <button class="btn btn-primary btn-block" id="signUp" type="button">Sign Up</button></form>
-                    </div>
-                </section>
-            </main>
+    <section id="intro">
+      <div class="box">
+        <main class="page registration-page">
+          <section class="clean-block clean-form dark">
+            <div class="container">
+              <div class="block-heading">
+                <h2 class="text-info">Registration</h2>
+                <p>Please enter the below information to register.</p>
+              </div>
+              <form>
+                <div class="form-group">
+                  <label for="name">Name</label
+                  ><input class="form-control item" type="text" id="name" />
+                </div>
+                <div class="form-group">
+                  <label for="password">Password</label
+                  ><input
+                    class="form-control item"
+                    type="password"
+                    id="password"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label
+                  ><input class="form-control item" type="email" id="email" />
+                </div>
+                <button
+                  class="btn btn-primary btn-block"
+                  id="signUp"
+                  type="button"
+                >
+                  Sign Up
+                </button>
+              </form>
             </div>
+          </section>
+        </main>
+      </div>
 
-
-<script type="text/javascript"
- src="https://studio.alan.app/web/lib/alan_lib.js"></script>
- <script>
-   var alanBtnInstance = alanBtn({
-     key: "66157f1f82040fb72ff9f3ee75c193942e956eca572e1d8b807a3e2338fdd0dc/stage",
-     onCommand: function (commandData) {
-       if (commandData.command === "go:back") {
-         //call client code that will react on the received command
-       }
-     },
-     rootEl: document.getElementById("alan-btn"),
-   });
- </script>
-
-
-	</section>
-	<script src="three.r95.min.js"></script>
+      <script
+        type="text/javascript"
+        src="https://studio.alan.app/web/lib/alan_lib.js"
+      ></script>
+      <script>
+        var alanBtnInstance = alanBtn({
+          key:
+            "66157f1f82040fb72ff9f3ee75c193942e956eca572e1d8b807a3e2338fdd0dc/stage",
+          onCommand: function (commandData) {
+            if (commandData.command === "go:back") {
+              //call client code that will react on the received command
+            }
+          },
+          rootEl: document.getElementById("alan-btn"),
+        });
+      </script>
+    </section>
+    <script src="three.r95.min.js"></script>
     <script src="vanta.waves.min.js"></script>
     <script src="app.js"></script>
     <script src="assets/js/jquery.min.js"></script>
@@ -86,62 +112,64 @@
     <script src="assets/js/theme.js"></script>
 
     <footer class="page-footer dark">
-        <div class="container">
-            <div class="row">
-                    <div class="col-sm-3">
-                            <h5>Get started</h5>
-                            <ul>
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="signup.html">Sign up</a></li>
-                                <li><a href="logout.html">Logout</a></li>
-                                <li><a href="patient-info.html">Patient</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-sm-3">
-                            <h5>About us</h5>
-                            <ul>
-                                <li><a href="#">Company Information</a></li>
-                                <li><a href="#">Reviews</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-sm-3">
-                            <h5>Support</h5>
-                            <ul>
-                                <li><a href="contact.html">Contact Support</a></li>
-                                <li><a href="Emergency.html">Contact a Doctor</a></li>
-                            </ul>
-                        </div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3">
+            <h5>Get started</h5>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="signup.html">Sign up</a></li>
+              <li><a href="logout.html">Logout</a></li>
+              <li><a href="patient-info.html">Patient</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h5>About us</h5>
+            <ul>
+              <li><a href="#">Company Information</a></li>
+              <li><a href="#">Reviews</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h5>Support</h5>
+            <ul>
+              <li><a href="contact.html">Contact Support</a></li>
+              <li><a href="Emergency.html">Contact a Doctor</a></li>
+            </ul>
+          </div>
         </div>
-        <div class="footer-copyright">
-            <p>© 2020 GoHealth</p>
-        </div>
-    </footer>	
-</body>
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+      </div>
+      <div class="footer-copyright">
+        <p>© 2020 GoHealth</p>
+      </div>
+    </footer>
+  </body>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-app.js"></script>
 
-<!-- TODO: Add SDKs for Firebase products that you want to use
+  <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
-<script defer src="https://www.gstatic.com/firebasejs/7.17.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-analytics.js"></script>
+  <script
+    defer
+    src="https://www.gstatic.com/firebasejs/7.17.1/firebase-auth.js"
+  ></script>
 
-
-<script>
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "AIzaSyAEpK-QycuWRN2QAVX9OxYtoQh5aOYzD7I",
-    authDomain: "sigmahacks-f60d1.firebaseapp.com",
-    databaseURL: "https://sigmahacks-f60d1.firebaseio.com",
-    projectId: "sigmahacks-f60d1",
-    storageBucket: "sigmahacks-f60d1.appspot.com",
-    messagingSenderId: "192614888023",
-    appId: "1:192614888023:web:11e0706d66cd5e3786a912",
-    measurementId: "G-7FB9PE0NZQ"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
-</script>
-<script type="module" src="signup.js"></script>
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyCUDrErgQSWUsIrEGTpwcLHAxRVo1GEpQw",
+      authDomain: "gohealth-287305.firebaseapp.com",
+      databaseURL: "https://gohealth-287305.firebaseio.com",
+      projectId: "gohealth-287305",
+      storageBucket: "gohealth-287305.appspot.com",
+      messagingSenderId: "193336133177",
+      appId: "1:193336133177:web:975c8c52c05ab32c2eefe8",
+      measurementId: "G-MN17SZD07V",
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
+  <script type="module" src="signup.js"></script>
 </html>

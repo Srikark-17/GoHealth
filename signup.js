@@ -5,6 +5,8 @@ link.addEventListener("click", signUp);
 function signUp() {
   var email = document.getElementById("email").value;
   var password = document.getElementById("password").value;
+  var name = document.getElementById("name").value;
+  localStorage.setItem("drMedName", name);
   console.log(email);
   console.log(password);
   firebase

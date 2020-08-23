@@ -12,8 +12,11 @@ We used the Google Cloud Platform along with Firebase for this project.
     * Store Vital Data and User Information
     * Store Information if the user is a Doctor
   * Cloud Functions
+  
 * Other GCP
   * Google Maps API
+  * Google Vision
+  
 Bootstrap HTML/CSS/JS
 * Bootstrap Framework
   * Use of JQuery

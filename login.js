@@ -29,8 +29,8 @@ function log() {
   firebase.auth().onAuthStateChanged(function (user) {
     if (user) {
       // User is signed in.
-      FirebaseAuth.getInstance().signOut;
       alert("Try again");
+      FirebaseAuth.getInstance().signOut;
 
       //window.location.href = "patient-info.html";
       // ...

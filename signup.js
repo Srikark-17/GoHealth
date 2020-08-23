@@ -17,6 +17,7 @@ function signUp() {
       var errorCode = error.code;
       var errorMessage = error.message;
       console.log("Success");
+      window.location.href = "patient-info.html";
 
       if (errorCode != null || errorMessage != null) {
         alert("Error: " + errorCode + errorMessage);
@@ -26,5 +27,4 @@ function signUp() {
       }
       // ...
     });
-  window.location.href = "patient-info.html";
 }

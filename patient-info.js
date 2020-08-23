@@ -1324,9 +1324,11 @@ function infoReturn() {
   var name = window.localStorage.getItem("drMedName");
   if (name.includes("Doctor") || name.includes("doctor")) {
     var image1 = document.getElementById("graph1");
-    image1.src = "graph1.jpeg";
+    image1.src =
+      "https://raw.githubusercontent.com/SK-crypto773/GoHealth/master/graph1.jpeg";
     var image2 = document.getElementById("graph1");
-    image2.src = "graph2.jpeg";
+    image2.src =
+      "https://raw.githubusercontent.com/SK-crypto773/GoHealth/master/graph2.jpeg";
 
     let dataStr = JSON.stringify(obj);
     let dataUri =
